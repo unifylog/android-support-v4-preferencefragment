@@ -5,27 +5,27 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.9.+'
+        classpath 'com.android.tools.build:gradle:0.12.2'
     }
 }
 
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 apply plugin: 'maven'
 
 version = VERSION
 group = GROUP
 
 dependencies {
-    compile 'com.android.support:support-v4:19.0.+'
+    compile 'com.android.support:support-v4:20.0.0'
 }
 
 android {
     compileSdkVersion 19
-    buildToolsVersion '19.0.1'
+    buildToolsVersion '19.1.0'
 
     defaultConfig {
         minSdkVersion 7
-        targetSdkVersion 19
+        targetSdkVersion 20
     }
 
     sourceSets {
